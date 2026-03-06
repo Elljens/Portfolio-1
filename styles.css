@@ -55,9 +55,9 @@ header {
 
 .section-header {
     position: absolute;
-    top: -90px;
+    top: -60px;
     left: 50px;
-    font-size: 70px;
+    font-size: 50px;
     color: #6b3f69;
 }
 
@@ -72,6 +72,7 @@ header {
     flex-direction: column;
     justify-content: center;
     padding: 50px;
+    margin: 20px auto;
 }
 
 .profile-img {
@@ -87,7 +88,10 @@ header {
 }
 
 .buttons {
-    padding: 40px 0;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
 }
 
 .pdf-buttons,
@@ -98,6 +102,10 @@ header {
     padding: 10px 30px;
     border-radius: 8px;
     margin-right: 10px;
+}
+
+.pdf-buttons {
+    margin-top: 15px;
 }
 
 a {
@@ -180,6 +188,12 @@ a {
         font-size: 80px;
     }
 
+    .section-header {
+        top: -90px;
+        left: 50px;
+        font-size: 70px;
+    }
+
     .about-content,
     .project-content {
         flex-direction: row;
@@ -191,6 +205,12 @@ a {
     .profile-text {
         max-width: 500px;  
         padding: 30px;
+    }
+
+    .buttons {
+        display: flex;
+        flex-direction: row;
+        padding: 40px 0;
     }
 
     .card {
